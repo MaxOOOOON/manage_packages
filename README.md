@@ -1,5 +1,5 @@
 # manage_packages
-Задания:
+Задания:  
 1)Создать свой RPM пакет  (можно взять свое приложение, либо собрать, например, апач с определенными опциями)  
 2) Создать свой репозиторий и разместить там ранее собранный RPM
 
@@ -11,7 +11,7 @@
 rpmbuild -bb score_check.spec   
 -только RPM 
 
-Установка приложения 
+Установка приложения  
 rpm -i Score-check-oom-1-1.x86_64.rpm
 
 Запуск приложения   
@@ -20,7 +20,8 @@ score_check
 
 2) Репозиторий размещен по адресу http://185.177.95.135/repo/  
 Nginx запущен в docker контейнере на vds  
-Команда для запуска контейнера : docker run \--name nginx \-v /srv/nginx/:/usr/share/nginx/html \-p 80:80 \-d nginx
+Команда для запуска контейнера :  
+docker run \--name nginx \-v /srv/nginx/:/usr/share/nginx/html \-p 80:80 \-d nginx
 
 Создание репозитория в ubuntu:   
 createrepo_c /srv/nginx/repo/  
